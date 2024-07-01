@@ -19,7 +19,4 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: osprette
-include:
-  - board: nrfmicro_13
-    shield: osprette
+    shield: planck

@@ -14,17 +14,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Default_layer {
+        planck_default {
             bindings = <
-&kp TAB       &kp Q      &kp W         &kp E         &kp R  &kp T      &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BSPC
-&kp LCTRL     &kp A      &kp S         &kp D         &kp F  &kp G      &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp ENTER
-&kp LSHIFT    &kp Z      &kp X         &kp C         &kp V  &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&kp CAPSLOCK  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp Q  &kp Q      &kp Q  &kp Q  &kp Q      &kp Q    &kp Q      &lt 2 ESC
-                                                            &kp SPACE  &to 1
+&kp TAB       &kp Q      &kp W         &kp E         &kp R      &kp T      &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp LCTRL     &kp A      &kp S         &kp D         &kp F      &kp G      &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp ENTER
+&kp LSHIFT    &kp Z      &kp X         &kp C         &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&kp CAPSLOCK  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &kp SPACE  &mo 1  &mo 1  &lt 2 DEL  &kp Q    &kp Q      &lt 3 ESC
+                                                                &kp SPACE  &mo 1
             >;
         };
 
-        layer_1 {
+        planck_num {
             bindings = <
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &trans  &trans  &trans  &trans  &trans  &trans
@@ -34,13 +34,33 @@
             >;
         };
 
-        layer_2 {
+        planck_f {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans
+            >;
+        };
+
+        planck_dangerZone {
             bindings = <
 &trans       &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL
 &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
 &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
 &bootloader  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
                                                    &trans  &trans
+            >;
+        };
+
+        thirty_default {
+            bindings = <
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none    &none     &none
+                                   &none  &none
             >;
         };
     };

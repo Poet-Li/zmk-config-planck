@@ -11,6 +11,15 @@
 #define Default_layer 0
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        forty2thirty {
+            bindings = <&tog 4>;
+            key-positions = <11 23 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,6 +70,26 @@
 &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none      &none    &none     &none
                                    &none  &none
+            >;
+        };
+
+        thirty_num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans
+            >;
+        };
+
+        thirty_f {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans
             >;
         };
     };

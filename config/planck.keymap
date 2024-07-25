@@ -124,6 +124,11 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <13 22>;
         };
+
+        tap_ctrl_twice {
+            bindings = <&tap_ctrl_twice>;
+            key-positions = <41 40>;
+        };
     };
 
     macros {
@@ -185,8 +190,8 @@
             bindings = <
 &none  &kp Q             &kp W        &kp E           &kp R           &kp T      &kp Y            &kp U           &kp I           &kp O        &kp P                &none
 &none  &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_GUI D  &hm LEFT_ALT F  &kp G      &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LCTRL L  &hm LEFT_SHIFT SEMI  &none
-&none  &kp Z             &kp X        &mt C C         &kp V           &kp B      &kp N            &kp M           &kp COMMA       &kp DOT      &kp FSLH             &none
-&none  &tap_ctrl_twice   &none        &none           &kp ENTER       &kp SPACE  &lt 6 BACKSPACE  &lt 5 DEL       &none           &none        &none                &none
+&none  &kp Z             &kp X        &kp C           &kp V           &kp B      &kp N            &kp M           &kp COMMA       &kp DOT      &kp FSLH             &none
+&none  &trans            &none        &none           &kp ENTER       &kp SPACE  &lt 6 BACKSPACE  &lt 5 DEL       &none           &none        &none                &none
                                                                       &none      &none
             >;
         };

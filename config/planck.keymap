@@ -94,6 +94,26 @@
             bindings = <&kp F12>;
             key-positions = <14 26>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <25 26>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <26 27>;
+        };
+
+        pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <27 28>;
+        };
+
+        pgdn {
+            bindings = <&kp PG_DN>;
+            key-positions = <28 29>;
+        };
     };
 
     keymap {

@@ -85,6 +85,15 @@
             key-positions = <10 22>;
         };
 
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <13 25>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <14 26>;
+        };
     };
 
     keymap {
@@ -149,6 +158,5 @@
                                                        &trans    &trans
             >;
         };
-
     };
 };

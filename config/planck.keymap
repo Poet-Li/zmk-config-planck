@@ -114,6 +114,28 @@
             bindings = <&kp PG_DN>;
             key-positions = <28 29>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <13 22>;
+        };
+    };
+
+    macros {
+        tap_ctrl_twice: tap_ctrl_twice {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp LCTRL>;
+
+            label = "TAP_CTRL_TWICE";
+            wait-ms = <20>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -163,7 +185,7 @@
             bindings = <
 &none  &kp Q             &kp W        &kp E           &kp R           &kp T      &kp Y            &kp U           &kp I           &kp O        &kp P                &none
 &none  &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_GUI D  &hm LEFT_ALT F  &kp G      &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LCTRL L  &hm LEFT_SHIFT SEMI  &none
-&none  &kp Z             &kp X        &kp C           &kp V           &kp B      &kp N            &kp M           &kp COMMA       &kp DOT      &kp FSLH             &none
+&none  &kp Z             &kp X        &mt C C         &kp V           &kp B      &kp N            &kp M           &kp COMMA       &kp DOT      &kp FSLH             &none
 &none  &none             &none        &none           &kp ENTER       &kp SPACE  &lt 6 BACKSPACE  &lt 5 DEL       &none           &none        &none                &none
                                                                       &none      &none
             >;

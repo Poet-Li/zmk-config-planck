@@ -29,6 +29,16 @@
             bindings = <&tog 4>;
             key-positions = <11 23 35>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 13>;
+        };
     };
 
     keymap {

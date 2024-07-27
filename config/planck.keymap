@@ -218,10 +218,10 @@
 
         thirty_arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN    &kp UP             &kp RIGHT        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans
                                         &trans  &trans
             >;
         };

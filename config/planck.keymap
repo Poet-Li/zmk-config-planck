@@ -20,6 +20,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        tm: thumb_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {

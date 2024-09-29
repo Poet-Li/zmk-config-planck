@@ -136,17 +136,17 @@
 
         ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <14 21>;
+            key-positions = <16 19>;
         };
 
         gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <15 20>;
+            key-positions = <21 14>;
         };
 
         alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <16 19>;
+            key-positions = <15 20>;
         };
     };
 
@@ -209,7 +209,7 @@
             bindings = <
 &none  &kp Q             &kp W  &kp E  &kp R               &kp T            &kp Y            &kp U      &kp I      &kp O    &kp P                &none
 &none  &hm LEFT_SHIFT A  &kp S  &kp D  &kp F               &kp G            &kp H            &kp J      &kp K      &kp L    &hm LEFT_SHIFT SEMI  &none
-&none  &hm LEFT_GUI Z    &kp X  &kp C  &kp V               &kp B            &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH             &none
+&none  &hm LEFT_GUI Z    &kp X  &kp C  &kp V               &kp B            &kp N            &kp M      &kp COMMA  &kp DOT  &hm RIGHT_GUI FSLH   &none
 &none  &trans            &none  &none  &tm LEFT_ALT ENTER  &tm LCTRL SPACE  &lt 5 BACKSPACE  &lt 6 DEL  &none      &none    &none                &none
                                                            &none            &none
             >;
@@ -217,11 +217,11 @@
 
         thirty_num {
             bindings = <
-&trans  &kp N1                &kp N2           &kp N3             &kp N4             &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0              &trans
-&trans  &hm LEFT_SHIFT MINUS  &hm LCTRL EQUAL  &hm LEFT_GUI LBKT  &hm LEFT_ALT RBKT  &kp BSLH   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &hm LEFT_SHIFT SQT  &trans
-&trans  &kp HOME              &kp END          &kp PG_UP          &kp PG_DN          &kp GRAVE  &trans    &trans    &trans  &trans     &trans              &trans
-&trans  &trans                &trans           &trans             &trans             &trans     &trans    &trans    &trans  &trans     &trans              &trans
-                                                                                     &trans     &trans
+&trans  &kp N1                &kp N2     &kp N3     &kp N4     &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0              &trans
+&trans  &hm LEFT_SHIFT MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &hm LEFT_SHIFT SQT  &trans
+&trans  &kp HOME              &kp END    &kp PG_UP  &kp PG_DN  &kp GRAVE  &trans    &trans    &trans  &trans     &trans              &trans
+&trans  &trans                &trans     &trans     &trans     &trans     &trans    &trans    &trans  &trans     &trans              &trans
+                                                               &trans     &trans
             >;
         };
 

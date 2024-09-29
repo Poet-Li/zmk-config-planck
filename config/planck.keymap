@@ -20,6 +20,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         tm: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "thumb mods";
@@ -206,11 +207,11 @@
 
         thirty_default {
             bindings = <
-&none  &kp Q             &kp W        &kp E           &kp R           &kp T      &kp Y            &kp U           &kp I           &kp O        &kp P                &none
-&none  &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_GUI D  &hm LEFT_ALT F  &kp G      &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LCTRL L  &hm LEFT_SHIFT SEMI  &none
-&none  &kp Z             &kp X        &kp C           &kp V           &kp B      &kp N            &kp M           &kp COMMA       &kp DOT      &kp FSLH             &none
-&none  &trans            &none        &none           &kp ENTER       &kp SPACE  &lt 5 BACKSPACE  &lt 6 DEL       &none           &none        &none                &none
-                                                                      &none      &none
+&none  &kp Q             &kp W  &kp E  &kp R               &kp T            &kp Y            &kp U      &kp I      &kp O    &kp P                &none
+&none  &hm LEFT_SHIFT A  &kp S  &kp D  &kp F               &kp G            &kp H            &kp J      &kp K      &kp L    &hm LEFT_SHIFT SEMI  &none
+&none  &hm LEFT_GUI Z    &kp X  &kp C  &kp V               &kp B            &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH             &none
+&none  &trans            &none  &none  &tm LEFT_ALT ENTER  &tm LCTRL SPACE  &lt 5 BACKSPACE  &lt 6 DEL  &none      &none    &none                &none
+                                                           &none            &none
             >;
         };
 
